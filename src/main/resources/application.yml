@@ -1,3 +1,20 @@
 server:
   ssl:
     key-store: c:/etc/cas/thekeystore
+
+cas:
+  server:
+    name: https://localhost:8443
+    prefix: ${cas.server.name}/cas
+  serviceRegistry:
+    initFromJson: false
+    json:
+      location: classpath:/myservices
+
+# Allow cors request for implicit flow
+# i.e.: https://cas-server/cas/oidc/.well-known/openid-configuration
+  httpWebRequest:
+    cors:
+      enabled: true
+      allowOrigins:
+        - "*"

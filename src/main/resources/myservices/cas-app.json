@@ -1,0 +1,11 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "cas-app",
+  "clientSecret": "secret",
+  "serviceId" : "http://localhost:4200/auth-callback",
+  "signIdToken": true,
+  "name": "Cas Client App",
+  "jwtAccessToken": true,
+  "bypassApprovalPrompt": false,
+  "id": 1
+}
