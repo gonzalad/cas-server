@@ -1,8 +1,7 @@
-server:
-  ssl:
-    key-store: c:/etc/cas/thekeystore
-
 cas:
+  authn:
+    oidc:
+      issuer: https://localhost:8443/cas/oidc
   server:
     name: https://localhost:8443
     prefix: ${cas.server.name}/cas
